@@ -1,56 +1,89 @@
 body {
   margin: 0;
   background-image: url("images/background.avif");
-  /* background-repeat: no-repeat; */
-  background-size: 50%;
+  background-size: cover;
 }
 
 .container {
-  background-color: white;
+  background-color: #ffffff;
   min-height: 100vh;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 2em;
+  border-radius: 15px;
+}
+
+.input-area input {
+  border-radius: 10px;
+  border: 1px solid #b8e2dc;
+}
+
+.btn-mint {
+  background-color: #b8e2dc;
+  border-color: #b8e2dc;
+  color: white;
+  border-radius: 10px;
 }
 
 .task-area {
   border: 1px solid lightgray;
+  border-radius: 15px;
+  padding: 1em;
 }
 
 .task-tabs {
   display: flex;
   border-bottom: 1px solid lightgray;
   position: relative;
+  border-radius: 15px 15px 0 0;
 }
 
 .task-tabs div {
   padding: 1em;
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 0 5px;
+  transition: background-color 0.3s ease;
+}
+
+.task-tabs div:hover {
+  background-color: #b8e2dc;
+  color: white;
 }
 
 #under-line {
   height: 4px;
-  background-color: pink;
+  background-color: #b8e2dc;
   position: absolute;
   width: 60px;
-  left: 0px;
-  top: 40px;
+  left: 490px;
+  top: 50px;
   padding: 0px;
+  transition: left 0.3s ease, width 0.3s ease;
+  border-radius: 2px;
 }
 
 .task {
   display: flex;
   justify-content: space-between;
   padding: 1em;
+  border-bottom: 1px solid lightgray;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  margin-bottom: 5px;
 }
 
 .task-done {
   text-decoration: line-through;
-}
-
-.task-tabs div {
-  cursor: pointer;
+  color: gray;
 }
 
 .task-done-bg {
-  background-color: #d3d3d3;
+  background-color: #e0f2f1;
+}
+
+.task button {
+  border: none;
+  background: none;
 }
