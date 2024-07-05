@@ -46,3 +46,11 @@ body {
 .task-done {
   text-decoration: line-through;
 }
+
+.task-tabs div {
+  cursor: pointer;
+}
+
+.task-done-bg {
+  background-color: #d3d3d3;
+}
